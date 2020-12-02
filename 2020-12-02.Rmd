@@ -1,0 +1,34 @@
+---
+title: "課堂練習模版"
+author: "張紹倫"
+date: "2020-12-02"
+output: output_format
+params:
+  id: "410973110"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Your code
+
+```{r}
+# best_performance_dpp
+ a<-election2020$`(3)
+ 蔡英文
+ 賴清德`
+ DPP=election2020$`(3)
+ 蔡英文
+ 賴清德`
+ DPP<-DPP[order(-DPP)]
+  election2020[[4]]<-
+  as.numeric(factor(election2020[[4]],levels=DPP))
+  best_performance_dpp <- 
+  list("county"=election2020$`鄉(鎮、市、區)別`[election2020[[4]]==1],
+    "votes"=as.integer(election2020$有效票數[election2020[[4]]==1]*DPP[[1]]),
+      "supporting_rate"=DPP[[1]])
+  election2020[[4]]<-a
+
+```
+
