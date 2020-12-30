@@ -1,0 +1,30 @@
+---
+title: "課練習模版"
+author: "?i?Э????"
+date: "2020-12-30"
+output: output_format
+params:
+  id: "410973110"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Your code
+
+```{r}
+otherMembers <- sample(memberIds[which(memberIds != memberID)],100)
+```
+
+```{r ans32, echo=F, eval=F}
+currentUser <- appLogin(memberID, currentGPS)
+refine_byLikesBlocks <- function(otherMembers){
+c(otherMembers[(otherMembers%in%currentUser$likes)],
+  otherMembers[(!otherMembers%in%currentUser$blocks)&(!otherMembers%in%currentUser$likes)])
+}
+refine_byLikesBlocks(otherMembers)
+```
+```{r}
+originF <- function(x) sin(x)+sqrt(5*x^2-x+1)*exp(x)
+```
